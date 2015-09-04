@@ -1,18 +1,20 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+realpath /usr/bin/java
+
 # load jdk, etc...
 #source ~/.bashrc
 
 # Ensure jdk is in the environmnent variable PATH
-if [ ! "$(echo $PATH | grep "jdk" )" ]; then
-	echo "No jdk found... Adding default jdk (/tools/jdk1.7.0_21/bin) to your PATH environment variable"
-	# Add jdk location to the PATH environment variable
-	PATH="/tools/jdk1.7.0_21/bin:${PATH}"
-fi
+#if [ ! "$(echo $PATH | grep "jdk" )" ]; then
+#	echo "No jdk found... Adding default jdk (/tools/jdk1.7.0_21/bin) to your PATH environment variable"
+#	# Add jdk location to the PATH environment variable
+#	PATH="/tools/jdk1.7.0_21/bin:${PATH}"
+#fi
 
 # Add TextPro to the LD_LIBRARY_PATH
-export LD_LIBRARY_PATH="/mnt/sdb/shared/mylibs:."
-echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}"
+#export LD_LIBRARY_PATH="/mnt/sdb/shared/mylibs:."
+#echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}"
 
 # load the classpath
 source $DIR/../classpath.txt
@@ -128,7 +130,8 @@ fi
 	if [ ! -z "$maxCandidatesNumber" ] && [ "$maxCandidatesNumber" ]; then
 		cmd="$cmd -maxCandidatesNumber $maxCandidatesNumber"
 	fi
-
+ 
+        #echo "run $cmd"
 	eval "$cmd"
 
 
