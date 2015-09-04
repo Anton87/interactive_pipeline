@@ -1,0 +1,20 @@
+# The pipeline language
+lang=it 
+
+# The directory containing the wiki index.
+index=index/it/
+
+# The SVM-Light-TK reranker model
+modelFile=data/svm.model
+
+# The max number of candidates to retrieve, before removing duplicates
+maxCandidatesNumber=50
+
+# The number of candidates to return
+candidatesNumber=20
+
+# A boolean indicating whether to filter candidates having duplicate text
+filterDuplicates=True
+
+# The log4j configuration file
+log4jConfigurationFile="resources/log4j.properties"
