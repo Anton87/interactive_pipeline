@@ -1,6 +1,6 @@
 # Interactive Q&A Pipeline
 
-A module for querying the [Q&amp;A][https://github.com/Anton87/minimalpipeline/] pipeline interactively.
+A module for querying the [Q&amp;A](https://github.com/Anton87/minimalpipeline/) pipeline interactively.
 
 ##PREREQUISITES##
 You need:
