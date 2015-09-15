@@ -5,7 +5,7 @@ A module for querying the Q&amp;A pipeline interactively.
 ##PREREQUISITES##
 You need:
  - a Lucene index of the Italian Wikipedia dump in the ./index/it folder of  your project directory.
- - the version 1.5.2 of TextPro in the tool folder of your project directory.
+ - the version 1.5.2 of TextPro in the ./tool folder of your project directory.
 
 
 ##INSTALLATION##
