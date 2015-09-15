@@ -131,7 +131,7 @@ fi
 		cmd="$cmd -maxCandidatesNumber $maxCandidatesNumber"
 	fi
  
-        #echo "run $cmd"
+        echo "run: $cmd"
 	eval "$cmd"
 
 
@@ -187,6 +187,7 @@ function run {
 		cmd="$cmd -printExamples $printExamples"
 	fi
 
+	echo "cmd: $cmd"
 	eval "$cmd"
 }
 

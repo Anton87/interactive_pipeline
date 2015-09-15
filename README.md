@@ -6,6 +6,16 @@ A module for querying the [Q&amp;A](https://github.com/Anton87/minimalpipeline/)
 You need:
  - a Lucene index of the Italian Wikipedia dump in the ./index/it folder of  your project directory.
  - the version 1.5.2 of TextPro in the ./tool folder of your project directory.
+ - the compiled library svmlight_tk.so in the ./tools/
+
+To compile the svmlight_tk.so library, run:
+
+```
+    $ cd interactive_pipeline
+    $ cd tools/SVM-Light-TK-1.5.Lib/
+    $ make clean
+    $ JAVA_HOME=<jdk path> make 
+```
 
 
 ##INSTALLATION##
