@@ -3,6 +3,7 @@ package qa.qcri.qf.pipeline.qademo;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -21,7 +22,6 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.similarities.Similarity;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import org.maltparser.core.helper.HashMap;
 
 /**
  * Retrieves candidates from a corpus (e.g. enwiki or itwiki)
